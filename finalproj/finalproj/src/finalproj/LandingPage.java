@@ -56,6 +56,8 @@ public class LandingPage {
 		frame.getContentPane().setLayout(null);
 		
 		JButton btnNewButton = new JButton("Cancel");
+		btnNewButton.setForeground(Color.WHITE);
+		btnNewButton.setBackground(new Color(255, 69, 0));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				frame.dispose();
@@ -110,5 +112,10 @@ public class LandingPage {
 		btnConfirm_1.setBackground(new Color(0, 128, 0));
 		btnConfirm_1.setBounds(166, 637, 134, 33);
 		frame.getContentPane().add(btnConfirm_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Copyright © 2023 Bazura Grill ");
+	    lblNewLabel_2.setFont(new Font("Segoe UI Light", Font.PLAIN, 13));
+	    lblNewLabel_2.setBounds(152, 807, 234, 26);
+	    frame.getContentPane().add(lblNewLabel_2);
 	}
 }

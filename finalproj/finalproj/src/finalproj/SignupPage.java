@@ -71,11 +71,7 @@ public class SignupPage {
 		frame.getContentPane().add(passwordField);
 		
 		txtDddd = new JTextField();
-		txtDddd.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-			}
-		});
+		
 		txtDddd.setText("example@gmail.com");
 		txtDddd.setToolTipText("example@gmail.com");
 		txtDddd.setColumns(10);
@@ -90,8 +86,7 @@ public class SignupPage {
 		JButton btnConfirm = new JButton("Confirm");
 		btnConfirm.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				MenuPage menu = new MenuPage();
-				MenuPage.main(null);
+				LandingPage.main(null);
 			}
 		});
 		btnConfirm.setForeground(Color.WHITE);
@@ -100,6 +95,8 @@ public class SignupPage {
 		frame.getContentPane().add(btnConfirm);
 		
 		JButton btnNewButton = new JButton("Close");
+		btnNewButton.setForeground(Color.WHITE);
+		btnNewButton.setBackground(new Color(255, 69, 0));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				frame.dispose();
